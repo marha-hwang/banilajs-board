@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세 - Board Project</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/board.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <div id="post-detail" class="post-detail">
+            <!-- Post content injected here -->
+        </div>
+
+        <div class="comments-section">
+            <h3>댓글 <span id="comment-count">0</span></h3>
+            <div class="comment-form">
+                <textarea id="comment-input" placeholder="댓글을 작성하세요..." rows="3"></textarea>
+                <button id="comment-submit-btn" class="btn btn--primary">댓글 작성</button>
+            </div>
+            <div id="comment-list" class="comment-list">
+                <!-- Comments injected here -->
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="src/components/header.js"></script>
+    <script type="module" src="src/pages/post.js"></script>
+</body>
+
+</html>

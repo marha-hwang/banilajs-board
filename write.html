@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성 - Board Project</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/write.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <div class="write-container">
+            <h1 class="write-title" id="page-title">게시글 작성</h1>
+            <form id="write-form" class="write-form">
+                <div class="input-group">
+                    <label for="title" class="input-label">제목</label>
+                    <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="content" class="input-label">내용</label>
+                    <textarea id="content" name="content" placeholder="내용을 입력하세요" rows="15" required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="image" class="input-label">이미지 첨부</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="btn btn--outline" id="cancel-btn">취소</button>
+                    <button type="submit" class="btn btn--primary" id="submit-btn">작성완료</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="src/components/header.js"></script>
+    <script type="module" src="src/pages/write.js"></script>
+</body>
+
+</html>

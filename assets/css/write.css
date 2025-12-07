@@ -1,0 +1,39 @@
+.write-container {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-xl);
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.write-title {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-main);
+    text-align: center;
+}
+
+.write-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.input-label {
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
